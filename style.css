@@ -1,0 +1,413 @@
+body {
+  background-color: #181818;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+  margin: 0 24px 30px 0;
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: block;
+  color: white;
+}
+
+.navbar {
+  height: 56px;
+  background-color: rgba(33, 33, 33, 0.98);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  width: 80px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.menu-svg {
+  margin-left: 10px;
+}
+
+.button-no-background {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.youtube-brand-name {
+  color: white;
+  font-weight: 550;
+}
+
+.search-input {
+  border-radius: 0%;
+  border: solid 1px rgb(49, 49, 49);
+  cursor: auto;
+  height: 30px;
+  width: 40%;
+}
+
+.search-bar {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-options {
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar-option {
+  margin: 10px;
+}
+
+.search-button {
+  height: 34px;
+  border: solid 1px rgb(49, 49, 49);
+  background-color: #393939;
+  cursor: pointer;
+  width: 80px;
+}
+
+.account-button {
+  background: none;
+  border: 2px solid;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #3ea6ff;
+  height: 40px;
+}
+
+.sign-in-text {
+  margin-left: 5px;
+}
+
+.video-player {
+  width: 100%;
+  height: 30rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.video-info {
+  color: white;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.video-title {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.views {
+  font-weight: 400;
+  color: #858585;
+}
+
+.content {
+  display: grid;
+  grid-template: auto 1fr / 2fr 1fr;
+  padding: 5rem 8rem 8rem 8rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    padding: 56px 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+.infos-under-title {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.share-button {
+  display: flex;
+  color: #858585;
+  align-items: center;
+  font-weight: 550;
+  margin: 0 20px 0 0;
+}
+
+.under-video-buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+.likes-section {
+  display: flex;
+  margin-right: 20px;
+}
+
+.thumb-up-count,
+.thumb-down-count {
+  margin-left: 10px;
+}
+
+.publisher-section {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.profile-image {
+  border-radius: 50%;
+  max-height: 48px;
+}
+
+.publisher-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.description {
+  color: white;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.subs-amount {
+  color: #858585;
+  margin-top: 0;
+  font-size: 13px;
+}
+
+.description-link:link,
+:visited {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
+.desc {
+  font-size: 14px;
+  width: 100%;
+}
+
+.subscribe-button {
+  background-color: #bd0000;
+  margin-left: auto;
+  width: auto;
+  height: auto;
+  border: none;
+  font-weight: 600;
+  color: white;
+  height: auto;
+  padding: 0 10px 0 10px;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.sub-section {
+  display: flex;
+}
+
+.show-more {
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: #858585;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.publisher-section {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.up-next {
+  display: flex;
+  margin-top: 0;
+}
+
+.up-next-text {
+}
+
+.autoplay {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+
+  align-items: center;
+}
+
+.autoplay-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.autoplay-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.autoplay-image {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.single-video {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  margin-left: 7px;
+}
+
+.thumbnail-title {
+  margin: 0;
+  font-size: 14px;
+}
+
+.video-views-and-date,
+.video-artist {
+  margin: 2px 0 0 0;
+  color: #858585;
+  font-size: 12px;
+  font-weight: 450;
+}
+.up-next-video {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.first-image {
+  margin-bottom: 10px;
+}
+
+.show-more-button {
+  width: 100%;
+  border: 1px solid #3ea6ff;
+  background: none;
+  color: #3ea6ff;
+  padding: 10px 0 10px 0;
+  font-weight: 650;
+}
+
+.comments-number-and-sorting {
+  display: flex;
+}
+
+.comments-number {
+  color: white;
+  font-weight: 500;
+}
+
+.sort-icon {
+  margin-left: 30px;
+}
+
+.sort-text {
+  color: #858585;
+  font-weight: 600;
+}
+
+.add-comment-input {
+  margin-left: 20px;
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #858585;
+  background: none;
+  height: 30px;
+  color: white;
+}
+
+.add-comment-section {
+  display: flex;
+}
+
+.comment-image {
+  height: 40px;
+  width: 40px;
+}
+
+.comment {
+  display: flex;
+  margin-top: 30px;
+}
+
+.comment-content-section {
+  margin-left: 20px;
+}
+
+.comment-likes-section {
+  margin-top: 14px;
+  display: flex;
+}
+
+.name-and-date {
+  display: flex;
+  align-items: center;
+}
+
+.comment-author {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.comment-image {
+  border-radius: 50%;
+}
+
+.comment-date {
+  color: #858585;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.comment-text {
+  margin: 0;
+  color: white;
+  font-size: 15px;
+}
+
+.comment-like-amount {
+  color: #858585;
+  margin: 0 5px 0 5px;
+}
+
+.reply-button {
+  color: #858585;
+}
+
+.comment-dislike-icon,
+.comment-like-icon {
+  height: 18px;
+  width: 18px;
+}
